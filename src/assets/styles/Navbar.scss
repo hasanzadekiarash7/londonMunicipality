@@ -1,0 +1,93 @@
+@import '../../index.scss';
+.navbar{
+    width: 100%;
+    height: 100px;
+    background-color: #212121;
+    @include flexMini();
+    gap: 30px;
+    @media screen and (max-width:450px) {
+        gap: 5px;
+    }
+}
+
+.menu-right{
+    flex: 1;
+    @include flexMini(flex-end,center);
+    border-right: 1px solid #717171;
+    padding: 20px;
+    height: 100%;
+    @media screen and (max-width:900px) {
+        display: none !important;   
+    }
+}
+
+
+.menu-center{
+    flex: 2;
+    @include flexMini();
+    gap: 20px;
+    @media screen and (max-width:900px) {
+        padding: 20px;
+        img{
+            &:last-child{
+                display: none !important;
+            }
+        }
+    }
+    @media screen and (max-width:750px) {
+        img{
+            &:last-child{
+                display: none !important;
+            }
+        }
+        img{
+            width: 100%;
+        }
+    }
+    @media screen and (max-width:450px) {
+        padding: 0px 5px;
+    }
+}
+
+
+.menu-left{
+    flex: 2;
+    @include flexMini(flex-start,center);
+    gap: 40px;
+    border-left: 1px solid #717171;
+    padding: 20px;
+    height: 100%;
+    @media screen and (max-width:900px) {
+        flex: 1;
+    }
+    @media screen and (max-width:750px) {
+        @include flexMini();
+        .search{
+            display: none;
+        }
+    }
+    @media screen and (max-width:450px) {
+        padding: 0px 5px;
+    }
+}
+
+.sideBar{
+    @extend %transition;
+    background-color: #212121;
+    width: 300px;
+    height: 85vh;
+    position: absolute;
+    right: -300px;
+    padding: 10px;
+    &-list{
+        @include flexMini(space-between,center);
+        margin-top: $mt-5;
+    }
+    .Icon-space{
+        margin-top: 3px;
+    }
+}
+
+.left-0{
+    right: 0;
+}

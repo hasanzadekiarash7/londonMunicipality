@@ -1,0 +1,44 @@
+@import '../../index.scss';
+
+.label {
+    @include flexMini();
+    gap: 10px;
+    @extend %transition;
+
+    div {
+        font-size: 20px;
+    }
+}
+
+.link {
+    div {
+        @extend %transition;
+        cursor: pointer;
+
+        div {
+            width: 0%;
+            height: 3px;
+            background-color: #BE123C;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            @extend %transition;
+
+        }
+
+        &:hover {
+            div {
+                width: 100%;
+                height: 3px;
+                background-color: #BE123C;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+            }
+        }
+    }
+}
