@@ -1,0 +1,30 @@
+@import '../../index.scss';
+.card-part-title{
+    margin-top: $mt-5;
+    margin-bottom: $mt-1;
+    font-size: 40px;
+    color: #212121;
+}
+
+.max-width-1200{
+    max-width: 1200px;
+    padding: 10px;
+}
+
+.card-part-content{
+    width: 100%;
+    font-size: 16px;
+    line-break: 2;
+}
+
+.cardWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    @media screen and (max-width: 750px) {
+        grid-template-columns: 1fr;
+    }
+}
