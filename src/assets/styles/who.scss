@@ -67,3 +67,15 @@
     font-size: 18px;
     margin: 20px 0px;
 }
+
+.check-btn{
+    @media screen and (max-width: 750px) {
+        flex-direction: column;
+    }
+    div{
+        width: max-content;
+        @media screen and (max-width: 750px) {
+            width: 100%;
+        }
+    }
+}

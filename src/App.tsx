@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from './components/Navbar';
 import TitleHeader from './components/TitleHeader';
 import CardTemplate from './components/CardTemplate';
+import EventCard from './components/EventCard';
 
 
 const App = (): React.ReactNode => {
@@ -43,6 +44,8 @@ const App = (): React.ReactNode => {
       <hr className='line-res' />
       </div>
       <CardTemplate title='Priorities for London' description='Read about the things that matter most right now.' cards={priorities} />
+      <EventCard />
+      <CardTemplate title='Upcoming events' description='Discover the exciting events happening in London.' haveAction cards={priorities} />
     </div>
   )
 }
