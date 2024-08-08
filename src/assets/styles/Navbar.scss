@@ -83,6 +83,17 @@
         @include flexMini(space-between,center);
         margin-top: $mt-5;
     }
+    &-bottom{
+        color: #fff !important;
+        margin-top: $mt-13;
+        @include flexMini();
+        text-align: center;
+        flex-direction: column;
+        gap: 20px;
+        .text-yellow{
+            color: #EAB308;
+        }
+    }
     .Icon-space{
         margin-top: 3px;
     }

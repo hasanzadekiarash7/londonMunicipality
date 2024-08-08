@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../assets/styles/Navbar.scss';
 import { Icon } from '@iconify/react';
 import LmLabel from './LmLabel';
+import LmButton from './LmButton';
 const NavBar = () => {
   const [showSideBar, setShowSideBar] = useState<boolean>(false)
   return (
@@ -16,9 +17,9 @@ const NavBar = () => {
         </div>
         <div className="menu-left">
           <div className='search'>
-          <LmLabel linkAble text='search' prependIcon='mdi:magnify' />
+            <LmLabel linkAble text='search' prependIcon='mdi:magnify' />
           </div>
-          <div onClick={() => setShowSideBar(item=> !item)}>
+          <div onClick={() => setShowSideBar(item => !item)}>
             <LmLabel linkAble text='menu' prependIcon='mdi:menu' />
           </div>
         </div>
@@ -27,32 +28,37 @@ const NavBar = () => {
         <div className="sideBar-list">
           <LmLabel linkAble text='who we are' />
           <div className="Icon-space">
-            <Icon style={{ fontSize: '28px' ,backgroundColor: '#BE123C', borderRadius: '50%' }} icon="mdi:chevron-right" />
+            <Icon style={{ fontSize: '28px', backgroundColor: '#BE123C', borderRadius: '50%' }} icon="mdi:chevron-right" />
           </div>
         </div>
         <div className="sideBar-list">
           <LmLabel linkAble text='who we are' />
           <div className="Icon-space">
-            <Icon style={{ fontSize: '28px' ,backgroundColor: '#BE123C', borderRadius: '50%' }} icon="mdi:chevron-right" />
+            <Icon style={{ fontSize: '28px', backgroundColor: '#BE123C', borderRadius: '50%' }} icon="mdi:chevron-right" />
           </div>
         </div>
         <div className="sideBar-list">
           <LmLabel linkAble text='who we are' />
           <div className="Icon-space">
-            <Icon style={{ fontSize: '28px' ,backgroundColor: '#BE123C', borderRadius: '50%' }} icon="mdi:chevron-right" />
+            <Icon style={{ fontSize: '28px', backgroundColor: '#BE123C', borderRadius: '50%' }} icon="mdi:chevron-right" />
           </div>
         </div>
         <div className="sideBar-list">
           <LmLabel linkAble text='who we are' />
           <div className="Icon-space">
-            <Icon style={{ fontSize: '28px' ,backgroundColor: '#BE123C', borderRadius: '50%' }} icon="mdi:chevron-right" />
+            <Icon style={{ fontSize: '28px', backgroundColor: '#BE123C', borderRadius: '50%' }} icon="mdi:chevron-right" />
           </div>
         </div>
         <div className="sideBar-list">
           <LmLabel linkAble text='who we are' />
           <div className="Icon-space">
-            <Icon style={{ fontSize: '28px' ,backgroundColor: '#BE123C', borderRadius: '50%' }} icon="mdi:chevron-right" />
+            <Icon style={{ fontSize: '28px', backgroundColor: '#BE123C', borderRadius: '50%' }} icon="mdi:chevron-right" />
           </div>
+        </div>
+        <div className="sideBar-bottom">
+          <p className="text-yellow">Help with living costs</p>
+          <p>Information about help you can get with the rising cost of living.</p>
+          <LmButton text='Find out how' />
         </div>
       </div>
     </>

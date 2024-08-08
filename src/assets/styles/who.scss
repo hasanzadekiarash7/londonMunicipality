@@ -17,13 +17,46 @@
     line-break: 2;
 }
 
-.cardWrapper{
+.cardWrapper-2{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
     gap: 30px;
     width: 100%;
+    @media screen and (max-width: 750px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cardWrapper-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    @media screen and (max-width: 950px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width: 750px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cardWrapper-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    @media screen and (max-width: 1150px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media screen and (max-width: 950px) {
+        grid-template-columns: 1fr 1fr;
+    }
     @media screen and (max-width: 750px) {
         grid-template-columns: 1fr;
     }

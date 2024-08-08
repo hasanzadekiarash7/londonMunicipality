@@ -2,13 +2,15 @@
 
 .card {
     @include flexMini(flex-start, flex-start);
-    flex-direction: column;
-    height: 400px;    
+    flex-direction: column;  
     gap: 20px;
+    height: 500px;
+    @media screen and (max-width: 950px) {
+        height: 450px;
+    }
     @media screen and (max-width: 750px) {
         height: auto;
     }
-
     img {
         width: 100%;
     }
