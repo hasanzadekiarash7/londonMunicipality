@@ -4,9 +4,9 @@
     @include flexMini(flex-start, flex-start);
     flex-direction: column;  
     gap: 20px;
-    height: 500px;
+    height: 550px;
     @media screen and (max-width: 950px) {
-        height: 450px;
+        height: auto;
     }
     @media screen and (max-width: 750px) {
         height: auto;
