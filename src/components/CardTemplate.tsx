@@ -20,7 +20,7 @@ const CardTemplate = ({ cards, title, description, haveAction }: CardTemplate) =
       <div className='width-full max-width-1200'>
         <h1 className='card-part-title'>{title}</h1>
         <div className='d-flex flex-space-between width-full'>
-          {description ? <p className='card-part-content'>{description}</p> : ''}
+          <p className='card-part-content'>{description}</p>
           <div>
             {haveAction ? <LmButton text='View all upcoming events' /> : ''}
           </div>
