@@ -9,7 +9,7 @@ type ButtonProps = {
 const LmButton = ({text, isDark,widthFull}:ButtonProps) => {
   return (
     <div>
-        <button className={`lm-btn ${isDark ? 'dark-mode' : ''} ${widthFull ? 'width-full' : ''}`}>
+        <button type='submit' className={`lm-btn ${isDark ? 'dark-mode' : ''} ${widthFull ? 'width-full' : ''}`}>
             {text}
         </button>
     </div>
