@@ -4,6 +4,7 @@ import TitleHeader from './components/TitleHeader';
 import CardTemplate from './components/CardTemplate';
 import EventCard from './components/EventCard';
 import LmForm from './components/LmForm';
+import LmFooter from './components/LmFooter';
 
 
 const App = (): React.ReactNode => {
@@ -69,6 +70,11 @@ const App = (): React.ReactNode => {
       img: 'https://www.london.gov.uk/sites/default/files/styles/media_component_16_9_lg/public/lt_roughsleeping_490x245.png?h=a83fab32&itok=Po_48mLM',
       description: 'As Mayor of London, I’m on a mission to end homelessness in our city. Will you join me?'
     },
+    {
+      title: 'End homelessness',
+      img: 'https://www.london.gov.uk/sites/default/files/styles/media_component_16_9_lg/public/lt_roughsleeping_490x245.png?h=a83fab32&itok=Po_48mLM',
+      description: 'As Mayor of London, I’m on a mission to end homelessness in our city. Will you join me?'
+    },
   ]
   return (
     <div>
@@ -89,6 +95,7 @@ const App = (): React.ReactNode => {
         <hr className='line-res' />
       </div>
       <LmForm />
+      <LmFooter />
     </div>
   )
 }
