@@ -3,13 +3,16 @@ import '../assets/styles/Navbar.scss';
 import { Icon } from '@iconify/react';
 import LmLabel from './LmLabel';
 import LmButton from './LmButton';
+import { Link } from 'react-router-dom';
 const NavBar = () => {
   const [showSideBar, setShowSideBar] = useState<boolean>(false)
   return (
     <>
       <div className='navbar'>
         <div className="menu-right">
+          <Link to='/'>
           <LmLabel linkAble text='home' prependIcon='mdi:home' />
+          </Link>
         </div>
         <div className="menu-center">
           <img src="https://www.london.gov.uk/themes/estate/gla_core_theme/images/logo-mayoral.svg?sgv41t" alt="" />
@@ -58,7 +61,7 @@ const NavBar = () => {
         <div className="sideBar-bottom">
           <p className="text-yellow">Help with living costs</p>
           <p>Information about help you can get with the rising cost of living.</p>
-          <LmButton text='Find out how' />
+          <LmButton url='/' text='Find out how' />
         </div>
       </div>
     </>

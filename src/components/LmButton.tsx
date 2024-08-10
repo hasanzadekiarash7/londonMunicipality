@@ -5,7 +5,7 @@ type ButtonProps = {
   text: string,
   isDark?: boolean,
   widthFull?: boolean,
-  linkable: boolean,
+  linkable?: boolean,
   url: string | ''
 }
 

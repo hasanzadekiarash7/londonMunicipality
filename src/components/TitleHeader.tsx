@@ -11,7 +11,7 @@ const TitleHeader = () => {
                         <p className="content">
                             Find out about the work of the Mayor, the London Assembly and the Greater London Authority.
                         </p>
-                        <LmButton text='View our who we are page' />
+                        <LmButton linkable url='/who-we-are' text='View our who we are page' />
                     </div>
                 </div>
             </div>
