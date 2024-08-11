@@ -1,7 +1,5 @@
 import React from 'react'
-import NavBar from '../components/Navbar'
 import CardTemplate from '../components/CardTemplate'
-import LmFooter from '../components/LmFooter'
 
 const WhoWeAre:React.FC = ():React.ReactNode => {
   const whoCards = [
@@ -18,12 +16,10 @@ const WhoWeAre:React.FC = ():React.ReactNode => {
   ]
   return (
     <div>
-      <NavBar />
       <CardTemplate title='Who we are' cards={whoCards} />
       <CardTemplate title='Who we are' cards={whoCards} />
       <CardTemplate title='Who we are' cards={whoCards} />
       <CardTemplate title='Who we are' cards={whoCards} />
-      <LmFooter />
     </div>
   )
 }

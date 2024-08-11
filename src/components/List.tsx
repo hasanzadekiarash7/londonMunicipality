@@ -8,7 +8,7 @@ const List = ({ items }: list) => {
     return (
         <div className='list'>
             <ul>
-                {items.map((content) => <li>{content}</li>)}
+                {items.map((content,index) => <li key={index}>{content}</li>)}
             </ul>
         </div>
     )

@@ -1,10 +1,8 @@
 import React from 'react'
-import NavBar from '../components/Navbar';
 import TitleHeader from '../components/TitleHeader';
 import CardTemplate from '../components/CardTemplate';
 import EventCard from '../components/EventCard';
 import LmForm from '../components/LmForm';
-import LmFooter from '../components/LmFooter';
 const home = (): React.ReactNode => {
     const whoCards = [
       {
@@ -76,7 +74,6 @@ const home = (): React.ReactNode => {
     ]
     return (
       <div>
-        <NavBar />
         <TitleHeader />
         <CardTemplate title='Who we are' cards={whoCards} />
         <div className='width-full d-flex flex-center'>
@@ -93,7 +90,6 @@ const home = (): React.ReactNode => {
           <hr className='line-res' />
         </div>
         <LmForm />
-        <LmFooter />
       </div>
     )
   }
